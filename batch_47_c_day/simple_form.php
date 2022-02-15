@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,26 +8,28 @@
     <title>Document</title>
 
     <style>
-        .mt{
+        .mt {
             margin-top: 5px;
         }
     </style>
 
 </head>
+
 <body>
     <h1>This is HTML file from server</h1>
 
-    <form action="/batch_47_c/form_data.php" method="POST">
+    <form action="/learn-php/batch_47_c_day/form_data.php" method="POST">
 
         <input class="mt" type="text" name="st_name" placeholder="Name">
         <br>
-        <input  class="mt" type="text" name="st_id" placeholder="ID">
+        <input class="mt" type="text" name="st_id" placeholder="ID">
         <br>
-        <input  class="mt" type="text" name="semester" placeholder="semester">
+        <input class="mt" type="text" name="semester" placeholder="semester">
         <br>
-        <button  class="mt" type="submit"> Submit </button>
+        <button class="mt" type="submit"> Submit </button>
 
     </form>
 
 </body>
+
 </html>

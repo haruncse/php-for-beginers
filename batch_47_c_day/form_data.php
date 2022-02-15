@@ -1,6 +1,7 @@
 <?php 
 
 echo "<h1> This is submited form </h1>";
+
 // echo "Name: ".$_GET['st_name'];
 // echo "<br> ID: ".$_GET['st_id'];
 // echo "<br> Semester: ".$_GET['semester'];
@@ -11,7 +12,7 @@ echo "<br> Semester: ".$_POST['semester'];
 
 $data=[];
 
-session()->put("User_info",$data);
+// session()->put("User_info",$data);
 
 /*
     $value1=$_GET['st_name'];
