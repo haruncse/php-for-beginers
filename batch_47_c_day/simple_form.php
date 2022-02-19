@@ -18,7 +18,8 @@
 <body>
     <h1>This is HTML file from server</h1>
 
-    <form action="/learn-php/batch_47_c_day/form_data.php" method="POST">
+    <!-- <form action="/learn-php/batch_47_c_day/form_data.php" method="POST"> -->
+    <form action="/learn-php/batch_47_c_day/db_connection.php" method="POST">
 
         <input class="mt" type="text" name="st_name" placeholder="Name">
         <br>
