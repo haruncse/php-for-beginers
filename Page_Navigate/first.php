@@ -8,6 +8,7 @@
 </head>
 
 <body>
+
     <form action="second.php">
         <label>Name</label>
         <input type="text" name="user_name">
@@ -16,6 +17,7 @@
         <input type="text" name="user_id">
 
         <input type="submit" value="submit">
+        <button type="submit"> Submit </button>
 
     </form>
 
