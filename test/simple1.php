@@ -10,6 +10,4 @@ $variable2 = 40;
 $sumResult = $variable1 + $variable2;
 echo "<br> Result: ".$sumResult;
 
-
-
 ?>
