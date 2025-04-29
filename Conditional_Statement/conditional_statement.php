@@ -18,7 +18,7 @@ print $variable1 / $variable2;
 //this is comments
 echo "<br>";
 
-if($variable3> 0){
+if($variable3 > 0){
     print("Positive Value");
 }else{
     print("Negative Value");
