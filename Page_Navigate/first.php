@@ -8,15 +8,12 @@
 </head>
 
 <body>
-    <form action="second.php">
+    <form action="second.php" method="POST">
         <label>Name</label>
         <input type="text" name="user_name">
-
         <Label>ID</Label>
-        <input type="text" name="user_id">
-
+        <input type="password" name="user_id">
         <input type="submit" value="submit">
-
     </form>
 
 

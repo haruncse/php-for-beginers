@@ -10,10 +10,10 @@
 
     <?php
 
-    $userName = $_GET['user_name'];
+    $userName = $_POST['user_name'];
     echo "User Name: ".$userName;
 
-    $userId = $_GET['user_id'];
+    $userId = $_POST['user_id'];
     echo "<br> ID: ".$userId;
 
     ?>
