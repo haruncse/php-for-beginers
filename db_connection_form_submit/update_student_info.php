@@ -40,6 +40,5 @@ else {
     echo "Error: " . $update_attendence_info . "<br>" . $conn->error;
 }
 
-
 $conn->close();
 ?>

@@ -10,7 +10,7 @@
     <h1>Run from PHP Server</h1>
 
     <!-- Data  Save using form Start-->
-    <form action="/batch_50_b_eve/data_insert_get.php" method="POST">
+    <form action="data_insert_get.php" method="POST">
         <input type="text" placeholder="Name" name="st_name">
         <input type="text"  placeholder="Reg No" name="reg_no">
         <input type="text"  placeholder="Attendence" name="attendence">

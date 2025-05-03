@@ -2,7 +2,7 @@
 
 // DataBase info
 
-$servername = "127.0.0.1";
+$servername = "127.0.0.1";  //localhost
 $username = "root";
 $password = "";
 $dbname = "uu_cse";
@@ -16,8 +16,8 @@ if ($conn->connect_error) {
 
 }else{
   echo"Connection Success";
- 
 }
+
 
 $name=$_POST['st_name'];
 $reg_no= $_POST['reg_no'];
@@ -34,14 +34,14 @@ $sql = "INSERT INTO attendence (st_name, reg_no,attendance,	semester) VALUES ('"
 // $conn->query($sql)
 
 if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully <br>";
+  echo "<br> New record created successfully <br>";
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
 echo "<h2> Student Info </h2>";
 
-$get_attendence_info="SELECT * FROM attendence order by id DESC";
+$get_attendence_info="SELECT * FROM attendence order by reg_no DESC";
 
 $result = $conn->query($get_attendence_info);
 
@@ -50,7 +50,7 @@ $result = $conn->query($get_attendence_info);
 if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
-    echo "id: " . $row["id"]. " - Name: " . $row["st_name"]. "- Reg No: ". $row["reg_no"]."- Attendence: " . $row["attendance"]. " -Semester: ".$row["semester"]." <br>";
+    echo "id: " . $row["reg_no"]. " - Name: " . $row["st_name"]. "- Reg No: ". $row["reg_no"]."- Attendence: " . $row["attendance"]. " -Semester: ".$row["semester"]." <br>";
   }
 } else {
   echo "0 results";
