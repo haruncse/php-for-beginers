@@ -2,6 +2,8 @@
 
 echo "<h1> This is submited form </h1>";
 
+// echo $_GET['st_name'];
+
 // echo "Name: ".$_GET['st_name'];
 // echo "<br> ID: ".$_GET['st_id'];
 // echo "<br> Semester: ".$_GET['semester'];

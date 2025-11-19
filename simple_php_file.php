@@ -8,22 +8,17 @@
 </head>
 
 <body>
-
-
-    <?php   echo "This is from PHP Echo <br>" ?>
-    
+    <?php echo "This is from PHP Echo <br>" ?>
     <h1>This is HTML Tag From HTML H1</h1>
-
     <?php
-
     echo "Hello Every One echo  <br>";
     print (" Hello World print ");
-    // $a[]=[1,2,3,4];
-    print_r("<br> Hello  print_r!!", );
+    echo "<br>";
+    $a[] = [1, 2, 3, 4];
+    print_r("<br> Hello  print_r!!");
+    print_r($a);
     var_dump("<br> Hello Dump");
-
     ?>
-
 </body>
 
 </html>

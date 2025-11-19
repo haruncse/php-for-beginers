@@ -24,7 +24,7 @@ $reg_no= $_POST['reg_no'];
 $attendence= $_POST['attendence'];
 $semester= $_POST['semester'];
 
-$sql = "INSERT INTO attendence (st_name, reg_no,attendance,	semester) VALUES ('".$name."', '".$reg_no."','".$attendence."','".$semester."')";
+$sql = "INSERT INTO attendence (st_name, reg_no,attendance,	semester) VALUES ('{$name}', '".$reg_no."','".$attendence."','".$semester."')";
 
 /*
   $sql = "INSERT INTO attendence (st_name, roll) VALUES ('".$name."', '".$roll."')";
