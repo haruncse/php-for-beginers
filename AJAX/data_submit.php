@@ -8,7 +8,7 @@
 <body>
   <h2>Create User</h2>
   <form id="userForm">
-    <label>Name: <input type="text" name="name" required></label><br>
+    <label>Name: <input type="text" id="id_of_name" name="name" required></label><br>
     <label>Role: <input type="text" name="role" required></label><br>
     <button type="submit">Submit</button>
   </form>
@@ -25,13 +25,15 @@
           type: "POST",            // HTTP method
           dataType: "json",        // expect JSON response
           data: {                  // form data (no JSON.stringify)
-            name: $("input[name='name']").val(),
+            name: $("input[name='name']").val(), //$("#id_of_name").val(),
             role: $("input[name='role']").val()
           },
           success: function (response) {
+            console.log(response);
             $("#output").text("Success:\n" + JSON.stringify(response, null, 2));
           },
           error: function (xhr, status, error) {
+            console.error("Error:", status, error);
             $("#output").text("Error:\n" + xhr.responseText);
           }
         });

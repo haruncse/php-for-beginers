@@ -1,7 +1,5 @@
 <?php
-
 // DataBase info
-
 $servername = "127.0.0.1";  //localhost
 $username = "root";
 $password = "";
@@ -17,7 +15,6 @@ if ($conn->connect_error) {
 }else{
   echo"Connection Success";
 }
-
 
 $name=$_POST['st_name'];
 $reg_no= $_POST['reg_no'];
