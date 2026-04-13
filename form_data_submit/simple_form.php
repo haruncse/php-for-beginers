@@ -12,15 +12,10 @@
             margin-top: 5px;
         }
     </style>
-
 </head>
-
 <body>
     <h1>This is HTML file from server</h1>
-
-    
     <form action="form_data.php" method="POST">
-
         <input class="mt" type="text" name="st_name" placeholder="Name">
         <br>
         <input class="mt" type="text" name="st_id" placeholder="ID">
@@ -28,9 +23,6 @@
         <input class="mt" type="text" name="semester" placeholder="semester">
         <br>
         <button class="mt" type="submit"> Submit </button>
-
     </form>
-
 </body>
-
 </html>
